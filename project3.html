@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Public Waste Sorting Behavior | Tran Nguyen Ngoc Dung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- Animated Blobs Background -->
+  <div class="blob-bg">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-blob blob-4"></div>
+
+    <!-- Blink Sparkles -->
+    <div class="blink-star star-1">✦</div>
+    <div class="blink-star star-2">✧</div>
+    <div class="blink-star star-3">✦</div>
+    <div class="blink-star star-4">✦</div>
+    <div class="blink-star star-5">✧</div>
+    <div class="blink-star star-6">✦</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html#about" class="brand-group">
+        <span class="brand-name">Trần Nguyễn Ngọc Dung</span>
+        <span class="brand-role">Seeking Internship & Full-time Opportunities 🌱</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html#about" class="nav-btn">Home</a>
+        <a href="index.html#experience" class="nav-btn">Experience</a>
+        <a href="index.html#education" class="nav-btn">Education</a>
+        <a href="index.html#project" id="nav-project" class="nav-btn active">Projects</a>
+        <a href="index.html#contact" class="nav-btn">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="cv.html#cv" class="cv-quick-btn">
+          CV ↗
+          <span class="pulse-dot-container">
+            <span class="pulse-dot-ping"></span>
+            <span class="pulse-dot"></span>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content space-y-10 animate-fade-in">
+
+    <!-- Hero Title Banner / Meta Info -->
+    <div class="border-b pb-6">
+        <span class="badge-category" style="background-color: var(--zoto-carrotlight); color: var(--zoto-carrot);">Scientific research· University-level Research Topic</span>
+        <h2 class="project-title-main mt-2">Factors Influencing Public Waste-Sorting Behavior Among Ho Chi Minh City Residents</h2>
+        <p class="project-subtitle-main mt-1">An academic study merging the TPB & NAT models, validated using SPSS 20 and SmartPLS 4 / AMOS</p>
+
+      <div class="meta-flex-strip">
+          <div class="meta-flex-item">🔬 Field: Social & Consumer Behavior Research</div>
+          <div class="meta-flex-item orange">👤 Role: Leader</div>
+          <div class="meta-flex-item">📅 Completed: 10/2025</div>
+      </div>
+    </div>
+
+    <!-- Data analysis pipeline -->
+    <div class="process-flow-strip">
+        <span class="process-flow-step">🧹 Data cleaning (358 → 295 samples)</span>
+        <span class="process-flow-arrow">→</span>
+        <span class="process-flow-step">📏 Reliability testing (Cronbach's Alpha)</span>
+        <span class="process-flow-arrow">→</span>
+        <span class="process-flow-step">🔎 Factor analysis (EFA → CFA)</span>
+        <span class="process-flow-arrow">→</span>
+        <span class="process-flow-step">📈 Structural regression / SEM (Bootstrapping)</span>
+        <span class="process-flow-arrow">→</span>
+        <span class="process-flow-step">💡 Interpretation & policy implications</span>
+    </div>
+
+    <!-- Story Navigation Steps Bar -->
+    <div class="consulting-pipeline">
+        <button onclick="scrollToStorySection('step-1')" class="pipeline-btn active" id="btn-step-1">
+            <span class="pipeline-btn-stage">Stage 01</span>
+            <span class="pipeline-btn-name">Research Context</span>
+        </button>
+        <button onclick="scrollToStorySection('step-2')" class="pipeline-btn" id="btn-step-2">
+            <span class="pipeline-btn-stage">Stage 02</span>
+            <span class="pipeline-btn-name">Data Collection</span>
+        </button>
+        <button onclick="scrollToStorySection('step-3')" class="pipeline-btn" id="btn-step-3">
+            <span class="pipeline-btn-stage">Stage 03</span>
+            <span class="pipeline-btn-name">Reliability Testing</span>
+        </button>
+        <button onclick="scrollToStorySection('step-4')" class="pipeline-btn" id="btn-step-4">
+            <span class="pipeline-btn-stage">Stage 04</span>
+            <span class="pipeline-btn-name">CFA & SEM Fit</span>
+        </button>
+        <button onclick="scrollToStorySection('step-5')" class="pipeline-btn" id="btn-step-5">
+            <span class="pipeline-btn-stage">Stage 05</span>
+            <span class="pipeline-btn-name">Discoveries</span>
+        </button>
+    </div>
+
+    <!-- ==================== STAGE 01: RESEARCH CONTEXT & THEORETICAL FRAMEWORK ==================== -->
+    <div id="step-1" class="stage-row-grid-10 border-b pb-10">
+        <div class="col-span-6 space-y-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="space-y-4">
+                <div class="section-divider-title">
+                    <span>01 / Research Context</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">Pressing Context & Theoretical Foundation</h3>
+                <p class="stage-desc-text">
+                    Household waste generated in Ho Chi Minh City peaks at <strong>~13,000 tons/day</strong>, placing heavy strain on urban infrastructure and the cityscape. Despite existing penalty regulations, waste-sorting behavior in public spaces still faces many barriers. This study builds and tests a structural model of the contributing factors to provide a scientific basis for policymaking.
+                </p>
+                <p class="stage-desc-text">
+                    The team merged two globally recognized academic models: the <strong>Theory of Planned Behavior — TPB</strong> (Ajzen, 1991) and the <strong>Norm Activation Theory — NAT</strong> (Schwartz, 1977), proposing a system of <strong>9 core hypotheses (H1–H9)</strong> describing the relationships between psycho-social factors and actual waste-sorting behavior.
+                </p>
+            </div>
+
+            <div class="contributions-inner-card">
+                <h4 class="contributions-inner-title">My Contributions</h4>
+                <div class="contributions-inner-flex">
+                    <span class="contribution-pill">Led the team as project leader</span>
+                    <span class="contribution-pill">Synthesized TPB & NAT theoretical frameworks</span>
+                    <span class="contribution-pill">Developed the 9-hypothesis research model</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-4">
+            <div class="framework-diagram-card">
+                <h4 class="contributions-inner-title" style="margin-bottom: 12px;">Conceptual Framework</h4>
+                <svg viewBox="0 0 360 250" width="100%" height="auto">
+                    <ellipse cx="60" cy="30" rx="52" ry="20" fill="var(--zoto-sky)" stroke="var(--zoto-police)" stroke-width="1"/>
+                    <text x="60" y="34" text-anchor="middle" font-size="10" font-weight="700" fill="#1a237e">Env. Concern</text>
+                    <ellipse cx="160" cy="30" rx="42" ry="20" fill="var(--zoto-sky)" stroke="var(--zoto-police)" stroke-width="1"/>
+                    <text x="160" y="34" text-anchor="middle" font-size="10" font-weight="700" fill="#1a237e">Knowledge</text>
+                    <ellipse cx="255" cy="30" rx="42" ry="20" fill="var(--zoto-sky)" stroke="var(--zoto-police)" stroke-width="1"/>
+                    <text x="255" y="34" text-anchor="middle" font-size="10" font-weight="700" fill="#1a237e">Attitude</text>
+                    <ellipse cx="330" cy="30" rx="40" ry="20" fill="var(--zoto-sky)" stroke="var(--zoto-police)" stroke-width="1"/>
+                    <text x="330" y="34" text-anchor="middle" font-size="9.5" font-weight="700" fill="#1a237e">Personal Norms</text>
+
+                    <ellipse cx="120" cy="100" rx="55" ry="20" fill="var(--zoto-carrotlight)" stroke="var(--zoto-carrot)" stroke-width="1"/>
+                    <text x="120" y="104" text-anchor="middle" font-size="9.5" font-weight="700" fill="#e65100">Policy Enforcement</text>
+                    <ellipse cx="280" cy="100" rx="55" ry="20" fill="var(--zoto-carrotlight)" stroke="var(--zoto-carrot)" stroke-width="1"/>
+                    <text x="280" y="104" text-anchor="middle" font-size="9.5" font-weight="700" fill="#e65100">Incentives</text>
+
+                    <rect x="140" y="150" width="90" height="34" rx="10" fill="var(--zoto-police)"/>
+                    <text x="185" y="171" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">INTENTION (INT)</text>
+
+                    <rect x="140" y="205" width="90" height="34" rx="10" fill="#e65100"/>
+                    <text x="185" y="226" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff">BEHAVIOR (BEH)</text>
+
+                    <g stroke="#9aa5c9" stroke-width="1.2" fill="none" marker-end="url(#arrow)">
+                      <path d="M75,48 L150,150"/>
+                      <path d="M160,50 L175,150"/>
+                      <path d="M245,50 L195,150"/>
+                      <path d="M320,48 L210,150"/>
+                      <path d="M130,118 L180,150"/>
+                      <path d="M270,118 L200,204"/>
+                    </g>
+                    <path d="M185,184 L185,205" stroke="var(--zoto-police)" stroke-width="1.6" marker-end="url(#arrow)" fill="none"/>
+
+                    <text x="105" y="130" font-size="8" fill="var(--ink-dim)">H6</text>
+                    <text x="200" y="140" font-size="8" fill="var(--ink-dim)">H5</text>
+                    <text x="185" y="197" font-size="8" fill="var(--ink-dim)" text-anchor="middle">H9</text>
+
+                    <defs>
+                      <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                        <path d="M0,0 L6,3 L0,6 Z" fill="#9aa5c9"/>
+                      </marker>
+                    </defs>
+                </svg>
+                <p class="graphic-caption-italic" style="color: var(--ink-dim);">Figure 2.1: Conceptual framework merging TPB and NAT models for environmental behavior analysis.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 02: DATA COLLECTION & METHODOLOGY ==================== -->
+    <div id="step-2" class="stage-row-grid-10 border-b pb-10">
+        <div class="col-span-6 space-y-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="space-y-4">
+                <div class="section-divider-title">
+                    <span>02 / Data Collection</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">Data Collection & Screening</h3>
+                <p class="stage-desc-text">
+                    The study applied an academic mixed-methods approach <strong>(Qualitative – Quantitative – Qualitative)</strong>. The team conducted a preliminary focus group discussion to refine a questionnaire of <strong>32 observed variables</strong>. The formal study collected data through the online platform <strong>Khaosatme</strong>, gathering <strong>358 responses</strong> from residents in high-density districts (District 1, District 3, District 7, and Binh Chanh District). After cleaning, the dataset yielded <strong>295 valid samples</strong> for the structural analysis.
+                </p>
+            </div>
+
+            <div class="contributions-inner-card">
+                <h4 class="contributions-inner-title">My Contributions</h4>
+                <div class="contributions-inner-flex">
+                    <span class="contribution-pill">Designed the 32-item questionnaire</span>
+                    <span class="contribution-pill">Coordinated online data collection via Khaosatme</span>
+                    <span class="contribution-pill">Cleaned & validated the final dataset (N=295)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-4 space-y-4">
+            <div class="demographic-card">
+                <svg viewBox="0 0 120 120" width="100" height="100" style="flex-shrink:0;">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(33,150,243,0.1)" stroke-width="16"/>
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="var(--zoto-carrot)" stroke-width="16"
+                        stroke-dasharray="200.2 314.159" stroke-dashoffset="0" transform="rotate(-90 60 60)"/>
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="var(--zoto-police)" stroke-width="16"
+                        stroke-dasharray="113.96 314.159" stroke-dashoffset="-200.2" transform="rotate(-90 60 60)"/>
+                    <text x="60" y="65" text-anchor="middle" font-size="14" font-weight="700" fill="var(--zoto-police)">N=295</text>
+                </svg>
+                <div style="flex:1;">
+                    <h4 class="contributions-inner-title" style="margin-bottom:10px;">Survey Sample</h4>
+                    <div class="demographic-legend">
+                        <div class="demographic-legend-item"><span class="legend-dot" style="background-color: var(--zoto-carrot);"></span> Female — 63.7%</div>
+                        <div class="demographic-legend-item"><span class="legend-dot" style="background-color: var(--zoto-police);"></span> Male — 36.3%</div>
+                    </div>
+                    <div class="demographic-age-note">Ages 18–30 make up the majority: <strong>96.3%</strong></div>
+                </div>
+            </div>
+
+            <div class="survey-tool-card">
+                <div>
+                    <div style="display:flex; gap:6px; align-items:center; margin-bottom: 4px;">
+                        <span style="background-color: var(--zoto-sky); color: var(--zoto-police); font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">Khaosatme</span>
+                        <span style="font-size: 10px; color: var(--ink-dim);">Online survey tool</span>
+                    </div>
+                    <p style="font-size: 12px; color: var(--ink-soft);">358 raw responses → <strong style="color: var(--zoto-mintdeep);">295 valid samples</strong> after data cleaning</p>
+                </div>
+                <div style="font-size: 22px;">📋</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 03: ADVANCED DATA TESTING (RELIABILITY) ==================== -->
+    <div id="step-3" class="border-b pb-10 space-y-6">
+        <div class="stage-row-grid-10" style="grid-template-columns: repeat(10, 1fr);">
+          <div class="col-span-5 space-y-4">
+              <div class="section-divider-title">
+                  <span>03 / Reliability Testing</span>
+                  <span class="section-divider-line"></span>
+              </div>
+              <h3 class="stage-main-heading">Advanced Scale Reliability Testing</h3>
+              <p class="stage-desc-text">
+                  <strong>SPSS 20</strong> was used to assess the internal reliability and validity of the scales. 100% of the item groups exceeded the academic reliability threshold <strong>(α &gt; 0.6)</strong>, with corrected item-total correlations all above 0.3. The <strong>Personal Norms</strong> scale achieved the highest reliability (α = 0.863).
+              </p>
+              <p class="stage-desc-text">
+                  Exploratory Factor Analysis (EFA) with Varimax rotation confirmed that all factors achieved a sampling adequacy of <strong>0.5 ≤ KMO ≤ 1</strong> and a highly significant Bartlett's test (Sig. = 0.000 &lt; 0.05), with total variance extracted exceeding 50% in every case.
+              </p>
+          </div>
+
+          <div class="col-span-5">
+              <div class="efe-grid-wrapper">
+                  <div class="efe-grid-header">
+                      <span class="efe-grid-header-lbl">Reliability Scores</span>
+                      <span class="efe-grid-header-src">Table 2.1</span>
+                  </div>
+                  <div style="overflow-x: auto;" class="custom-scrollbar">
+                      <table class="efe-matrix-responsive-table" style="margin:0; min-width: 420px;">
+                          <thead>
+                              <tr>
+                                  <th>Factor</th>
+                                  <th style="text-align:center;">Cronbach's α</th>
+                                  <th style="text-align:center;">Assessment</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td style="font-weight:600; color: var(--zoto-police);">Environmental Concern</td>
+                                  <td style="text-align:center;">0.670</td>
+                                  <td style="text-align:center;"><span class="hypothesis-status-badge badge-supported">Pass</span></td>
+                              </tr>
+                              <tr>
+                                  <td style="font-weight:600; color: var(--zoto-police);">Knowledge</td>
+                                  <td style="text-align:center;">0.769</td>
+                                  <td style="text-align:center;"><span class="hypothesis-status-badge badge-supported">Pass</span></td>
+                              </tr>
+                              <tr>
+                                  <td style="font-weight:600; color: var(--zoto-police);">Attitude</td>
+                                  <td style="text-align:center;">0.819</td>
+                                  <td style="text-align:center;"><span class="hypothesis-status-badge badge-supported">Pass</span></td>
+                              </tr>
+                              <tr>
+                                  <td style="font-weight:700; color: var(--zoto-carrot);">Personal Norms</td>
+                                  <td style="text-align:center;" class="highlight-cell-efe">0.863</td>
+                                  <td style="text-align:center;"><span class="hypothesis-status-badge badge-supported">Highest</span></td>
+                              </tr>
+                              <tr>
+                                  <td style="font-weight:600; color: var(--zoto-police);">Policy Enforcement</td>
+                                  <td style="text-align:center;">0.805</td>
+                                  <td style="text-align:center;"><span class="hypothesis-status-badge badge-supported">Pass</span></td>
+                              </tr>
+                              <tr>
+                                  <td style="font-weight:600; color: var(--zoto-police);">Intention</td>
+                                  <td style="text-align:center;">0.756</td>
+                                  <td style="text-align:center;"><span class="hypothesis-status-badge badge-supported">Pass</span></td>
+                              </tr>
+                              <tr>
+                                  <td style="font-weight:600; color: var(--zoto-police);">Behavior</td>
+                                  <td style="text-align:center;">0.787</td>
+                                  <td style="text-align:center;"><span class="hypothesis-status-badge badge-supported">Pass</span></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 04: CFA & SEM MODEL FIT ==================== -->
+    <div id="step-4" class="border-b pb-10 space-y-6">
+        <div class="section-divider-title">
+            <span>04 / CFA & SEM Fit</span>
+            <span class="section-divider-line"></span>
+        </div>
+        <div class="stage-row-grid-10" style="grid-template-columns: repeat(12, 1fr);">
+            <div class="col-span-7 space-y-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div style="background-color: #ffffff; border-radius: 20px; padding: 20px; border: 1px solid rgba(33, 150, 243, 0.12); box-shadow: 0 4px 15px rgba(0,0,0,0.01);" class="space-y-4">
+                    <h3 class="stage-main-heading" style="font-size: 18px;">Structural Equation Model (SEM)</h3>
+                    <p class="stage-desc-text">
+                        Confirmatory Factor Analysis (CFA) was run on AMOS to assess unidimensionality and discriminant validity. After 4 rounds of advanced iterative testing to optimize Average Variance Extracted (AVE), the team made a decisive academic call: <strong>fully removing 3 observed variables that failed to meet convergence requirements (K4, ATT5, BEH4)</strong>. After removal, the model achieved good fit with the urban market data. HTMT indices for all construct pairs were below 0.85, confirming full discriminant validity.
+                    </p>
+                    <div class="cfa-metrics-grid" style="grid-template-columns: repeat(3, 1fr);">
+                        <div class="cfa-metric-itembox">
+                            <span class="cfa-metric-lbl">CMIN/DF</span>
+                            <span class="cfa-metric-val">2.071</span>
+                            <span class="cfa-metric-status">Good (≤ 3)</span>
+                        </div>
+                        <div class="cfa-metric-itembox">
+                            <span class="cfa-metric-lbl">CFI</span>
+                            <span class="cfa-metric-val">0.917</span>
+                            <span class="cfa-metric-status">Good (≥ 0.9)</span>
+                        </div>
+                        <div class="cfa-metric-itembox">
+                            <span class="cfa-metric-lbl">RMSEA</span>
+                            <span class="cfa-metric-val">0.060</span>
+                            <span class="cfa-metric-status">Good (≤ 0.06)</span>
+                        </div>
+                    </div>
+                    <div style="text-align:center; font-size: 11px; font-weight: 700; color: var(--zoto-mintdeep); background-color: var(--zoto-mint); padding: 8px; border-radius: 10px;">✓ Excellent Academic Fit</div>
+                </div>
+
+                <div class="contributions-inner-card">
+                    <h4 class="contributions-inner-title">My Contributions</h4>
+                    <div class="contributions-inner-flex">
+                        <span class="contribution-pill">Ran CFA iterations on AMOS</span>
+                        <span class="contribution-pill">Decided item-removal (K4, ATT5, BEH4) to optimize AVE</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-5">
+                <div class="explanation-power-dark-card" style="height: 100%;">
+                    <h4 class="explanation-power-title">Explanatory Power of the Model</h4>
+                    <div class="r-square-stack">
+                        <div>
+                            <div class="r-square-item-row">
+                                <span>R-Square (Behavior — BEH)</span>
+                                <span class="r-square-item-val">36.8%</span>
+                            </div>
+                            <div class="r-square-bar-bg"><div class="r-square-bar-fill" style="width: 36.8%"></div></div>
+                        </div>
+                        <div>
+                            <div class="r-square-item-row">
+                                <span>R-Square (Intention — INT)</span>
+                                <span class="r-square-item-val">47.2%</span>
+                            </div>
+                            <div class="r-square-bar-bg"><div class="r-square-bar-fill" style="width: 47.2%"></div></div>
+                        </div>
+                        <div>
+                            <div class="r-square-item-row">
+                                <span>R-Square (Attitude — ATT)</span>
+                                <span class="r-square-item-val">42.8%</span>
+                            </div>
+                            <div class="r-square-bar-bg"><div class="r-square-bar-fill" style="width: 42.8%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 05: ACADEMIC DISCOVERIES & HYPOTHESIS TESTING ==================== -->
+    <div id="step-5" class="space-y-6">
+        <div class="stage-row-grid-10" style="grid-template-columns: repeat(12, 1fr);">
+            <div class="col-span-5 space-y-4">
+                <div class="section-divider-title">
+                    <span>05 / Discoveries</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">Scientific Findings & Hypothesis Testing</h3>
+                <p class="stage-desc-text">
+                    SEM path analysis was run in <strong>SmartPLS 4</strong> using bootstrapping with 1,000 resamples to determine p-values at a 5% significance level. Inner VIF values &lt; 3 confirm the model has no multicollinearity issues.
+                </p>
+                <ul style="padding-left: 18px; font-size: 13px; color: var(--ink-soft); line-height: 1.7;">
+                    <li><strong>Intention (INT)</strong> is the core determinant of actual waste-sorting behavior (O = 0.607, p = 0.000).</li>
+                    <li>For Intention, <strong>Policy Enforcement</strong> (O = 0.315) and <strong>Personal Norms</strong> (O = 0.255) have the strongest effects.</li>
+                    <li><strong>H1, H7, and H8 rejected:</strong> Incentive Measures showed no significant moderating effect (p = 0.808). Notably, Environmental Concern was not a moderating variable but instead emerged as an independent variable with an exceptionally strong direct effect on Attitude (path coefficient as high as <strong>0.584</strong>).</li>
+                </ul>
+
+                <div class="contributions-inner-card">
+                    <h4 class="contributions-inner-title">My Contributions</h4>
+                    <div class="contributions-inner-flex">
+                        <span class="contribution-pill">Ran SEM bootstrapping on SmartPLS 4</span>
+                        <span class="contribution-pill">Interpreted the H1/H7/H8 rejection insight</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-7 hypotheses-panel-card">
+                <div class="hypotheses-panel-header">
+                    <div class="hypotheses-panel-title-group">
+                        <h3 class="hypotheses-panel-main-title">Results of the 9 Hypothesis Tests (H1–H9)</h3>
+                        <p class="hypotheses-panel-subtitle">Bootstrapping with 1,000 resamples · SmartPLS 4</p>
+                    </div>
+                    <div class="hyp-filter-toolbar">
+                        <button onclick="filterHypotheses('all')" id="hyp-all" class="filter-pill-btn active">All</button>
+                        <button onclick="filterHypotheses('accepted')" id="hyp-accepted" class="filter-pill-btn">Accepted</button>
+                        <button onclick="filterHypotheses('rejected')" id="hyp-rejected" class="filter-pill-btn">Rejected</button>
+                    </div>
+                </div>
+
+                <div style="overflow-x: auto;" class="custom-scrollbar">
+                    <table class="efe-matrix-responsive-table" style="margin: 0;">
+                        <thead>
+                            <tr>
+                                <th>Code</th>
+                                <th>Relationship Between Variables</th>
+                                <th style="text-align: center;">Coefficient (O)</th>
+                                <th style="text-align: center;">P-value</th>
+                                <th style="text-align: center;">Conclusion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hyp-table-body">
+                            <!-- Dynamic rows loaded via Javascript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Research implications -->
+        <div class="insight-callout-box">
+          <span class="insight-callout-title">💡 Research Implications — Answering the Research Question</span>
+          The results show that Ho Chi Minh City residents <strong>do not sort waste in public places mainly due to a lack of "Intention" to act</strong> — not a lack of material incentives (H8 rejected). That intention is reinforced most strongly by <strong>personal norms</strong> and the level of <strong>policy enforcement</strong>, while <strong>environmental concern</strong> exerts an indirect effect by shaping attitude. This suggests that communication campaigns should focus on building "social norms" (everyone does it, so should I) and increasing the visibility of legal regulations in public spaces, rather than relying solely on short-term rewards or incentives — alongside standardizing color-coded/labeled waste-sorting infrastructure.
+        </div>
+
+        <!-- PDF proof download card -->
+        <div class="proof-action-banner">
+            <div>
+                <h4 class="proof-banner-title">Verified Original Research Documentation</h4>
+                <p class="proof-banner-desc">This study was completed through rigorous field surveys and reliable data processing using SPSS, AMOS, and SmartPLS 4.</p>
+            </div>
+            <button onclick="openMockDocument('garbage')" class="btn btn-primary" style="background-color: var(--zoto-orange); color: white; border: none; white-space: nowrap; flex-shrink: 0;">
+                View Original Report (PDF)
+            </button>
+        </div>
+
+        <!-- Pager: Previous / Next / View all -->
+        <div class="project-pager">
+          <a href="project2.html" class="pager-link">← Previous Project</a>
+          <a href="index.html#project" class="pager-link pager-link-all">View All Projects</a>
+          <a href="project1.html" class="pager-link">Next Project →</a>
+        </div>
+    </div>
+
+  </main>
+
+  <!-- Proof Document Modal -->
+  <div class="proof-modal-overlay" id="proofModal" onclick="if(event.target===this) closeModal()">
+    <div class="proof-modal-box">
+      <button class="proof-modal-close-btn" onclick="closeModal()">✕</button>
+      <h3 id="modalTitle" style="font-family: var(--font-serif); font-size: 18px; font-weight: 700; color: var(--zoto-police); margin-bottom: 14px;"></h3>
+      <div id="modalBody"></div>
+      <div style="margin-top: 18px; text-align: center;">
+        <a id="modalDownloadLink" href="assets/reports/TranNguyenNgocDung-Baocao.pdf" download class="btn-download-mini">⬇ Download Original File (.pdf)</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="global-page-footer">
+    <p class="footer-gratitude-text">Thanks for visiting my portfolio 🌸</p>
+    <p class="footer-copyright-fineprint">© 2026 Tran Nguyen Ngoc Dung</p>
+  </footer>
+
+  <script>
+    function scrollToStorySection(sectionId) {
+      document.querySelectorAll('.pipeline-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById('btn-' + sectionId);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    const hypotheses = [
+        { id: 'H1', rel: 'EC x K → ATT', desc: 'Environmental Concern positively moderates the effect of Knowledge on Attitude', beta: '-0.039', p: '0.361', status: 'rejected' },
+        { id: 'H2', rel: 'K → ATT', desc: 'Knowledge positively affects Attitude toward waste-sorting behavior', beta: '0.184', p: '0.000', status: 'accepted' },
+        { id: 'H3', rel: 'K → INT', desc: 'Knowledge positively affects Intention to sort waste in public places', beta: '0.170', p: '0.003', status: 'accepted' },
+        { id: 'H4', rel: 'ATT → INT', desc: 'Attitude positively affects Intention to sort waste in public places', beta: '0.133', p: '0.019', status: 'accepted' },
+        { id: 'H5', rel: 'PN → INT', desc: 'Personal Norms positively affect Intention to sort waste', beta: '0.255', p: '0.002', status: 'accepted' },
+        { id: 'H6', rel: 'PE → INT', desc: 'Policy Enforcement positively affects Intention to sort waste', beta: '0.315', p: '0.000', status: 'accepted' },
+        { id: 'H7', rel: 'PE → BEH', desc: 'Policy Enforcement positively affects actual waste-sorting behavior', beta: '0.091', p: '0.240', status: 'rejected' },
+        { id: 'H8', rel: 'INC x INT → BEH', desc: 'Incentive Measures moderate the relationship between Intention and Behavior', beta: '-0.011', p: '0.808', status: 'rejected' },
+        { id: 'H9', rel: 'INT → BEH', desc: 'Intention positively affects actual waste-sorting behavior in public places', beta: '0.607', p: '0.000', status: 'accepted' }
+    ];
+
+    function filterHypotheses(filter) {
+        document.querySelectorAll('.filter-pill-btn').forEach(tab => tab.classList.remove('active'));
+        document.getElementById(`hyp-${filter}`).classList.add('active');
+        renderHypotheses(filter);
+    }
+
+    function renderHypotheses(filter = 'all') {
+        const tableBody = document.getElementById('hyp-table-body');
+        tableBody.innerHTML = '';
+        const filteredData = hypotheses.filter(h => filter === 'all' || h.status === filter);
+
+        filteredData.forEach(h => {
+            const statusBadge = h.status === 'accepted'
+                ? `<span class="hypothesis-status-badge badge-supported">Accepted</span>`
+                : `<span class="hypothesis-status-badge badge-rejected">Rejected</span>`;
+
+            const row = `
+                <tr>
+                    <td style="font-weight: bold; color: var(--zoto-police);">${h.id}</td>
+                    <td>
+                        <strong style="color: var(--zoto-police); display:block;">${h.rel}</strong>
+                        <span style="color: var(--ink-dim); font-size:11px; display:block; margin-top:2px;">${h.desc}</span>
+                    </td>
+                    <td style="text-align: center; font-weight: bold;">${h.beta}</td>
+                    <td style="text-align: center; font-weight: bold; color: ${h.p === '0.000' ? 'var(--zoto-carrot)' : 'var(--ink-soft)'};">${h.p}</td>
+                    <td style="text-align: center;">${statusBadge}</td>
+                </tr>
+            `;
+            tableBody.insertAdjacentHTML('beforeend', row);
+        });
+    }
+
+    function openMockDocument(type) {
+      const modal = document.getElementById('proofModal');
+      const title = document.getElementById('modalTitle');
+      const body = document.getElementById('modalBody');
+      modal.style.display = 'flex';
+
+      if (type === 'garbage') {
+        title.innerText = "Supporting Document: University-Level Research Project";
+        body.innerHTML = `
+          <div style="text-align: center; margin-bottom: 16px;">
+            <p style="font-weight: bold; font-size: 15px; color: var(--zoto-police);">FACTORS INFLUENCING PUBLIC WASTE-SORTING BEHAVIOR AMONG HO CHI MINH CITY RESIDENTS</p>
+            <p style="font-size: 11px; color: var(--ink-dim);">Academic reference file: TranNguyenNgocDung-Baocao.pdf</p>
+          </div>
+          <p style="font-size: 13.5px;">After processing with the academic software SPSS, AMOS, and SmartPLS 4, the model achieved high compatibility and reliability across the entire measurement scale system:</p>
+          <div style="background-color: rgba(33,150,243,0.05); padding: 12px; border-radius: 12px; margin-top: 14px; border: 1px solid rgba(0,0,0,0.05);">
+            <p style="font-weight: bold; font-size: 12px; margin-bottom: 6px; color: var(--zoto-police);">Cronbach's Alpha (α) reliability results:</p>
+            <ul style="padding-left: 16px; font-size: 12.5px; line-height: 1.5;">
+              <li>Personal Norms (PN): <strong>α = 0.863</strong></li>
+              <li>Attitude toward Behavior (ATT): <strong>α = 0.819</strong></li>
+              <li>Policy Enforcement (PE): <strong>α = 0.805</strong></li>
+              <li>Behavior (BEH): <strong>α = 0.787</strong></li>
+            </ul>
+          </div>
+          <p style="margin-top: 14px; font-size: 12px; text-align:center;"><strong>Instructor:</strong> MSc. Doan Nam Hai</p>
+        `;
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('proofModal').style.display = 'none';
+    }
+
+    renderHypotheses('all');
+  </script>
+
+</body>
+</html>

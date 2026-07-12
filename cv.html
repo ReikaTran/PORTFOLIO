@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV — Trần Nguyễn Ngọc Dung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- Animated Blobs Background -->
+  <div class="blob-bg">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-blob blob-4"></div>
+
+    <!-- Blink Sparkles -->
+    <div class="blink-star star-1">✦</div>
+    <div class="blink-star star-2">✧</div>
+    <div class="blink-star star-3">✦</div>
+    <div class="blink-star star-4">✦</div>
+    <div class="blink-star star-5">✧</div>
+    <div class="blink-star star-6">✦</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html#about" class="brand-group">
+        <span class="brand-name">Trần Nguyễn Ngọc Dung</span>
+        <span class="brand-role">Sales & Logistics Intern 🌱</span>
+      </a>
+      
+      <!-- Nav Links routing back to the main single page anchors -->
+      <div class="nav-links">
+        <a href="index.html#about" class="nav-btn">Home</a>
+        <a href="index.html#experience" class="nav-btn">Experience</a>
+        <a href="index.html#education" class="nav-btn">Education</a>
+        <a href="index.html#project" id="nav-project" class="nav-btn">Projects</a>
+        <a href="index.html#contact" class="nav-btn">Contact</a>
+      </div>
+
+      <!-- CV Quick Button set to Active state -->
+      <div class="nav-actions">
+        <a href="cv.html#cv" class="cv-quick-btn">
+          CV ↗
+          <span class="pulse-dot-container">
+            <span class="pulse-dot-ping"></span>
+            <span class="pulse-dot"></span>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-content">
+    
+    <section id="cv" class="portfolio-section cv-section">
+      <div class="section-header center-aligned-header">
+        <span class="hand-subtitle"><span class="bullet-dot-orange"></span>Bản đầy đủ</span>
+        <h2 class="section-main-title">DOWNLOAD MY <span class="text-carrot-italic">CV.</span></h2>
+        <p class="section-sub-text center-max-width">Bạn có thể xem trực tiếp CV bên dưới hoặc tải về bằng nút.</p>
+      </div>
+
+      <!-- CV Display Card Panel Block linked seamlessly with your CSS style -->
+      <div class="cv-display-panel-block">
+        <div class="cv-panel-header-toolbar">
+          <div class="cv-toolbar-left">
+            <span class="toolbar-icon">📄</span>
+            <span class="toolbar-filename-text">TRANNGUYENNGOCDUNG_CV.pdf</span>
+          </div>
+          <a href="TRANNGUYENNGOCDUNG_CV.pdf" download class="btn-download-action-cv">
+            Tải File Xuống ↓
+          </a>
+        </div>
+
+        <!-- Document Iframe element embedding the file -->
+        <iframe src="TRANNGUYENNGOCDUNG_CV.pdf" width="100%" height="750" class="cv-iframe-element">
+          Trình duyệt của bạn không hỗ trợ xem PDF trực tiếp.
+          <a href="TRANNGUYENNGOCDUNG_CV.pdf" class="fallback-pdf-anchor">Bấm vào đây để tải và xem CV nhé!</a>
+        </iframe>
+      </div>
+    </section>
+  
+  </main>
+
+  <!-- Left Bottom Corner Floating Element Bar -->
+  <div class="floating-online-status-bar">
+    <span class="pulsing-green-dot-wrapper">
+      <span class="green-dot-ping"></span>
+      <span class="green-dot-core"></span>
+    </span>
+    <span class="online-status-string-text">Dung's Portfolio · Online 🌸</span>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="global-page-footer">
+    <div class="footer-emoji-row">
+      <span>🥕</span><span>✨</span><span>🐰</span>
+    </div>
+    <p class="footer-gratitude-text">Thanks for visiting my portfolio 🌸</p>
+    <p class="footer-copyright-fineprint">© 2026 Trần Nguyễn Ngọc Dung</p>
+  </footer>
+
+</body>
+</html>

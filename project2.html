@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Market Expansion — Meet More Coffee | Tran Nguyen Ngoc Dung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- Animated Blobs Background -->
+  <div class="blob-bg">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-blob blob-4"></div>
+
+    <!-- Blink Sparkles -->
+    <div class="blink-star star-1">✦</div>
+    <div class="blink-star star-2">✧</div>
+    <div class="blink-star star-3">✦</div>
+    <div class="blink-star star-4">✦</div>
+    <div class="blink-star star-5">✧</div>
+    <div class="blink-star star-6">✦</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html#about" class="brand-group">
+        <span class="brand-name">Trần Nguyễn Ngọc Dung</span>
+        <span class="brand-role">Seeking Internship & Full-time Opportunities 🌱</span>
+      </a>
+      
+      <div class="nav-links">
+        <a href="index.html#about" class="nav-btn">Home</a>
+        <a href="index.html#experience" class="nav-btn">Experience</a>
+        <a href="index.html#education" class="nav-btn">Education</a>
+        <a href="index.html#project" id="nav-project" class="nav-btn active">Projects</a>
+        <a href="index.html#contact" class="nav-btn">Contact</a>
+      </div>
+
+      <!-- CV Quick Button set to Active state -->
+      <div class="nav-actions">
+        <a href="cv.html#cv" class="cv-quick-btn">
+          CV ↗
+          <span class="pulse-dot-container">
+            <span class="pulse-dot-ping"></span>
+            <span class="pulse-dot"></span>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content matching Gemini layout exactly -->
+  <main class="main-content space-y-10 animate-fade-in">
+    
+    <!-- Hero Title Banner / Meta Info -->
+    <div class="border-b pb-6">
+        <span class="badge-category">International Trade Marketing Case Study</span>
+        <h2 class="project-title-main mt-2">Identified New Export Markets for Meet More</h2>
+        <p class="project-subtitle-main mt-1">An analysis identifying the optimal country of entry into the European Union (EU)</p>
+        
+        <div class="meta-flex-strip">
+          <div class="meta-flex-item">📚 Course: International Trade Marketing</div>
+          <div class="meta-flex-item orange">📅 Completed: 03/2024</div>
+      </div>
+    </div>
+
+    <!-- Story Navigation Steps Bar (Interactive Consulting Pipeline) -->
+    <div class="consulting-pipeline">
+        <button onclick="scrollToStorySection('step-1')" class="pipeline-btn active" id="btn-step-1">
+            <span class="pipeline-btn-stage">Stage 01</span>
+            <span class="pipeline-btn-name">Business Context</span>
+        </button>
+        <button onclick="scrollToStorySection('step-2')" class="pipeline-btn" id="btn-step-2">
+            <span class="pipeline-btn-stage">Stage 02</span>
+            <span class="pipeline-btn-name">Market Research</span>
+        </button>
+        <button onclick="scrollToStorySection('step-3')" class="pipeline-btn" id="btn-step-3">
+            <span class="pipeline-btn-stage">Stage 03</span>
+            <span class="pipeline-btn-name">Market Analysis</span>
+        </button>
+        <button onclick="scrollToStorySection('step-4')" class="pipeline-btn" id="btn-step-4">
+            <span class="pipeline-btn-stage">Stage 04</span>
+            <span class="pipeline-btn-name">Decision</span>
+        </button>
+    </div>
+
+    <!-- ==================== STAGE 01: BUSINESS CONTEXT ==================== -->
+    <div id="step-1" class="stage-row-grid-10 border-b pb-10">
+        <div class="col-span-7 space-y-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="space-y-4">
+                <div class="section-divider-title">
+                    <span>01 / Business Context</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">Business Context & Growth Challenge</h3>
+                <p class="stage-desc-text">
+                    Meet More is a pioneering Vietnamese company specializing in instant coffee blended with agricultural produce (mango, coconut, taro, mint...), designed to reduce caffeine-related jitters while elevating the value of Vietnamese agriculture. As of 2023, the company had exported to more than 20 demanding markets. With the EVFTA agreement offering substantial tariff advantages on exports (cutting duties from 9% to 0% for processed coffee), we conducted this research to identify new potential EU markets for the company's business expansion.
+                </p>
+            </div>
+
+            <!-- Contributions Card -->
+            <div class="contributions-inner-card">
+                <h4 class="contributions-inner-title">My Contributions</h4>
+                <div class="contributions-inner-flex">
+                    <span class="contribution-pill">Researched company background & export performance</span>
+                    <span class="contribution-pill">Identified business opportunities & project objectives</span>
+                    <span class="contribution-pill">Collected secondary market information</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-3 graphic-dark-card">
+            <div class="graphic-dark-card-title-row">
+                <span class="graphic-dark-badge">Product Portfolio</span>
+                <span style="font-size: 20px;">☕</span>
+            </div>
+            <div style="margin: 16px 0;">
+                <h4 class="graphic-dark-main-title">Meet More Coffee</h4>
+                <p class="graphic-dark-desc">Signature instant coffee blended with agricultural produce (mango, coconut, taro, noni...)</p>
+            </div>
+            <div class="graphic-dark-stats-row">
+                <div class="graphic-dark-stat-item">
+                    <span class="graphic-dark-stat-lbl">Current export reach:</span>
+                    <span class="graphic-dark-stat-val">20+ countries</span>
+                </div>
+                <div class="graphic-dark-stat-item">
+                    <span class="graphic-dark-stat-lbl">EVFTA agreement:</span>
+                    <span class="graphic-dark-stat-val">0% tariff</span>
+                </div>
+            </div>
+            <p class="graphic-caption-italic">Figure: Overview of product features & current export network.</p>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 02: MARKET RESEARCH ==================== -->
+    <div id="step-2" class="stage-row-grid-10 border-b pb-10">
+        <div class="col-span-6 space-y-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="space-y-4">
+                <div class="section-divider-title">
+                    <span>02 / Market Research</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">Secondary Data Collection & Macro Market Screening</h3>
+                <p class="stage-desc-text">
+                    To identify markets scientifically, we drew on reliable international trade data from <strong>Trade Map (ITC)</strong> and <strong>Eurostat</strong>. The team compiled import figures for decaffeinated coffee (corresponding HS code) over 2017-2022 to test and screen for countries with stable, growing demand.
+                </p>
+            </div>
+
+            <div class="contributions-inner-card">
+                <h4 class="contributions-inner-title">My Contributions</h4>
+                <div class="contributions-inner-flex">
+                    <span class="contribution-pill">Collected European coffee import statistics</span>
+                    <span class="contribution-pill">Compared historical trade databases (2017-2022)</span>
+                    <span class="contribution-pill">Organized market screening database</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-4 space-y-4" style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="database-simulator-card" style="margin-top: 0;">
+                <div class="db-header">
+                    <span style="color: #4caf50; font-weight: bold;">● TradeMap.org API</span>
+                    <span style="color: #79747e;">Data Query: HS-090112</span>
+                </div>
+                <div style="overflow-x: auto;" class="custom-scrollbar">
+                    <table class="db-table">
+                        <thead>
+                            <tr>
+                                <th>Importer</th>
+                                <th>2020 (Tons)</th>
+                                <th>2021 (Tons)</th>
+                                <th>2022 (Tons)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="color: var(--zoto-police);">Netherlands</td>
+                                <td>1,743</td>
+                                <td>1,967</td>
+                                <td style="color: #4caf50; font-weight: bold;">2,599</td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--zoto-police);">Spain</td>
+                                <td>3,896</td>
+                                <td>4,689</td>
+                                <td>4,215</td>
+                            </tr>
+                            <tr>
+                                <td style="color: var(--zoto-police);">Austria</td>
+                                <td>1,334</td>
+                                <td>1,514</td>
+                                <td>1,431</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="graphic-caption-italic" style="margin-top: 8px;">Figure: Excerpt from the Trade Map database used for the screening funnel.</p>
+            </div>
+
+            <div style="background-color: #ffffff; border-radius: 16px; padding: 16px; border: 1px solid rgba(33, 150, 243, 0.15); display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.01);">
+                <div class="space-y-2">
+                    <div style="display: flex; gap: 6px; align-items: center;">
+                        <span style="background-color: var(--zoto-sky); color: var(--zoto-police); font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">Eurostat API</span>
+                        <span style="font-size: 10px; color: var(--ink-dim);">EU-27 Market</span>
+                    </div>
+                    <h4 style="font-size: 13px; font-weight: 700; color: var(--zoto-police);">Vietnam-to-EU Import Growth Rate</h4>
+                    <p style="font-size: 12px; color: var(--ink-soft);">First half of 2023: <strong style="color: var(--zoto-mintdeep);">+18.1% in value</strong></p>
+                </div>
+                <div style="font-size: 24px; color: var(--zoto-police);">📊</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 03: MARKET ANALYSIS ==================== -->
+    <div id="step-3" class="stage-row-grid-10 border-b pb-10">
+        <div class="col-span-5 space-y-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="space-y-4">
+                <div class="section-divider-title">
+                    <span>03 / Market Analysis</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">Optimization Screening Funnel (Consulting Funnel)</h3>
+                <p class="stage-desc-text">
+                    Rather than analyzing all 23 countries indiscriminately, the team applied a structured funnel approach — moving from broad to narrow:
+                </p>
+                <div class="space-y-2" style="font-size: 13px; color: var(--ink-soft);">
+                    <div style="display: flex; align-items: flex-start; gap: 8px;">
+                        <span style="background-color: var(--zoto-sky); color: var(--zoto-police); font-weight: 700; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0;">1</span>
+                        <p style="margin-top: 2px;"><strong>Funnel 1:</strong> Screened the 23 untapped EU member states.</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 8px;">
+                        <span style="background-color: var(--zoto-sky); color: var(--zoto-police); font-weight: 700; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0;">2</span>
+                        <p style="margin-top: 2px;"><strong>Funnel 2:</strong> Excluded countries with unstable import volumes, keeping the 7 markets with the strongest, most reliable capacity.</p>
+                    </div>
+                    <div style="display: flex; align-items: flex-start; gap: 8px;">
+                        <span style="background-color: var(--zoto-sky); color: var(--zoto-police); font-weight: 700; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0;">3</span>
+                        <p style="margin-top: 2px;"><strong>Funnel 3:</strong> Screened for countries importing more than <strong>1,000 tons</strong> of decaffeinated coffee annually, narrowing down to 5 priority candidates for the EFE matrix.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contributions-inner-card">
+                <h4 class="contributions-inner-title">My Contributions</h4>
+                <div class="contributions-inner-flex">
+                    <span class="contribution-pill">Analyzed import trends of 23 EU countries</span>
+                    <span class="contribution-pill">Designed the consulting market screening funnel</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-5" style="display: flex; align-items: center; justify-content: center;">
+            <div style="background-color: #ffffff; border-radius: 20px; padding: 20px; border: 1px solid rgba(33, 150, 243, 0.12); width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.01);" class="space-y-4">
+                <h4 class="contributions-inner-title">Screening Process Model</h4>
+                
+                <div class="svg-funnel-wrapper" style="max-width: 100%;">
+                    <svg viewBox="0 0 400 180" width="100%" height="auto">
+                        <polygon points="0,0 400,0 350,50 50,50" fill="#1a237e" opacity="0.95"/>
+                        <text x="200" y="30" fill="white" font-size="12" font-weight="bold" text-anchor="middle">FUNNEL 1: 23 UNTAPPED COUNTRIES</text>
+                        <polygon points="60,58 340,58 300,108 100,108" fill="#2196f3" opacity="0.95"/>
+                        <text x="200" y="88" fill="white" font-size="12" font-weight="bold" text-anchor="middle">FUNNEL 2: 7 STABLE MARKETS</text>
+                        <polygon points="110,116 290,116 250,166 150,166" fill="#ff9800" opacity="0.95"/>
+                        <text x="200" y="146" fill="white" font-size="12" font-weight="bold" text-anchor="middle">FUNNEL 3: 5 EFE CANDIDATES (&gt;1,000 tons)</text>
+                    </svg>
+                </div>
+                <div style="text-align: center; font-size: 11px; color: var(--ink-dim); font-style: italic;">Figure: Funnel diagram showing the data narrowing process.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 04: DECISION ==================== -->
+    <div id="step-4" class="space-y-8 border-b pb-10">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+            <div class="space-y-2">
+                <div class="section-divider-title">
+                    <span>04 / Decision</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">External Factor Evaluation Matrix (EFE Matrix)</h3>
+            </div>
+            <div style="background-color: var(--zoto-sky); padding: 6px 12px; border-radius: 8px; font-size: 12px; font-weight: 700; color: var(--zoto-police);">
+                Actual Scoring Matrix
+            </div>
+        </div>
+
+        <div class="decision-grid-12">
+            <div class="col-span-8 efe-grid-wrapper">
+                <div class="efe-grid-header">
+                    <span class="efe-grid-header-lbl">EFE Evaluation Grid</span>
+                    <span class="efe-grid-header-src">Data source: Nhom1-CLC-22DTM06.docx</span>
+                </div>
+                <div style="overflow-x: auto;" class="custom-scrollbar">
+                    <table class="efe-matrix-responsive-table" style="margin: 0;">
+                        <thead>
+                            <tr>
+                                <th>External Factor</th>
+                                <th style="text-align: center;">Weight</th>
+                                <th style="text-align: center;">Spain</th>
+                                <th style="text-align: center;">Italy</th>
+                                <th style="text-align: center; background-color: var(--zoto-police); color: white;">Netherlands</th>
+                                <th style="text-align: center;">Austria</th>
+                                <th style="text-align: center;">Portugal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: bold; color: var(--zoto-police);">Coffee consumption habits</td>
+                                <td style="text-align: center;">22%</td>
+                                <td style="text-align: center;">2 (0.44)</td>
+                                <td style="text-align: center;">1 (0.22)</td>
+                                <td style="text-align: center;" class="highlight-cell-efe">4 (0.88)</td>
+                                <td style="text-align: center;">3 (0.66)</td>
+                                <td style="text-align: center;">2 (0.44)</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; color: var(--zoto-police);">Market competitive pressure</td>
+                                <td style="text-align: center;">19%</td>
+                                <td style="text-align: center;">1 (0.19)</td>
+                                <td style="text-align: center;">1 (0.19)</td>
+                                <td style="text-align: center;" class="highlight-cell-efe">3 (0.57)</td>
+                                <td style="text-align: center;">2 (0.38)</td>
+                                <td style="text-align: center;">1 (0.19)</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; color: var(--zoto-police);">Economic openness</td>
+                                <td style="text-align: center;">13%</td>
+                                <td style="text-align: center;">2 (0.26)</td>
+                                <td style="text-align: center;">2 (0.26)</td>
+                                <td style="text-align: center;" class="highlight-cell-efe">4 (0.52)</td>
+                                <td style="text-align: center;">3 (0.39)</td>
+                                <td style="text-align: center;">3 (0.39)</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; color: var(--zoto-police);">Diplomatic relations with Vietnam</td>
+                                <td style="text-align: center;">11%</td>
+                                <td style="text-align: center;">3 (0.33)</td>
+                                <td style="text-align: center;">4 (0.44)</td>
+                                <td style="text-align: center;" class="highlight-cell-efe">4 (0.44)</td>
+                                <td style="text-align: center;">4 (0.44)</td>
+                                <td style="text-align: center;">2 (0.22)</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; color: var(--zoto-police);">Political stability</td>
+                                <td style="text-align: center;">10%</td>
+                                <td style="text-align: center;">2 (0.20)</td>
+                                <td style="text-align: center;">3 (0.30)</td>
+                                <td style="text-align: center;" class="highlight-cell-efe">2 (0.20)</td>
+                                <td style="text-align: center;">3 (0.30)</td>
+                                <td style="text-align: center;">1 (0.10)</td>
+                            </tr>
+                            <tr style="background-color: var(--zoto-police); color: #ffffff; font-weight: bold;">
+                                <td style="padding: 12px 10px; color: white;">TOTAL EFE SCORE</td>
+                                <td style="text-align: center; color: white;">100%</td>
+                                <td style="text-align: center; color: rgba(255,255,255,0.7);">2.10</td>
+                                <td style="text-align: center; color: rgba(255,255,255,0.7);">2.16</td>
+                                <td style="text-align: center; background-color: var(--zoto-carrot); color: white; font-size: 14px;">3.27</td>
+                                <td style="text-align: center; color: rgba(255,255,255,0.7);">2.81</td>
+                                <td style="text-align: center; color: rgba(255,255,255,0.7);">1.77</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-span-4 space-y-4">
+                <div class="graphic-dark-card" style="background:rgba(255,255,255,0.7);">
+                    <h4 style="font-weight: 700; font-size: 13px; color: var(--zoto-carrot); text-transform: uppercase; letter-spacing: 0.05em; display: flex; align-items: center; gap: 6px;">
+                        <span>🏆</span> Decision Insights
+                    </h4>
+                    <p style="font-size: 12.5px; color: var(--zoto-police); line-height: 1.6; margin: 12px 0;">
+                        Based on the EFE matrix results, <strong>the Netherlands</strong> emerges as the clear entry point, with an outstanding score of <span style="background-color: var(--zoto-carrot); padding: 2px 6px; border-radius: 4px; color: white; font-weight: bold;">3.27</span>.
+                    </p>
+                    <div class="graphic-dark-stats-row" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px; gap: 6px; font-size: 12px;">
+                        <div style="border-left: 2px solid var(--zoto-mintdeep); padding-left: 13px; letter-spacing: 0.03em; color: var(--zoto-police);">Massive market openness: <strong>200.11%</strong> (2022)</div>
+                        <div style="border-left: 2px solid var(--zoto-mintdeep); padding-left: 13px; letter-spacing: 0.03em; color: var(--zoto-police);">Exceptional consumption demand: <strong>8.0 kg/person/year</strong></div>
+                        <div style="border-left: 2px solid var(--zoto-mintdeep); padding-left: 13px; letter-spacing: 0.03em; color: var(--zoto-police);">Favorable trade under the bilateral Customs Agreement</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="contributions-inner-card">
+            <h4 class="contributions-inner-title">My Contributions</h4>
+            <div class="contributions-inner-flex">
+                <span class="contribution-pill">Took part in scoring the weighting coefficients for 8 environmental factors</span>
+                <span class="contribution-pill">Calculated the matrix's final weighted total scores</span>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="proof-action-banner">
+            <div>
+                <h4 class="proof-banner-title">Original Project Documentation</h4>
+                <p class="proof-banner-desc">The full strategy, detailed calculations, and scoring matrices are extracted directly from the team's academic research report.</p>
+            </div>
+            <button onclick="openMockDocument('meetmore')" class="btn btn-primary" style="background-color: var(--zoto-orange); color: white; border: none; white-space: nowrap; flex-shrink: 0;">
+                View Original Report (Word)
+            </button>
+        </div>
+
+        <!-- Pager: Previous / Next / View all -->
+        <div class="project-pager">
+          <a href="project1.html" class="pager-link">← Previous Project</a>
+          <a href="index.html#project" class="pager-link pager-link-all">View All Projects</a>
+          <a href="project3.html" class="pager-link">Next Project →</a>
+        </div>
+
+  </main>
+
+  <!-- Proof Document Modal -->
+  <div class="proof-modal-overlay" id="proofModal" onclick="if(event.target===this) closeModal()">
+    <div class="proof-modal-box">
+      <button class="proof-modal-close-btn" onclick="closeModal()">✕</button>
+      <h3 id="modalTitle" style="font-family: var(--font-serif); font-size: 18px; font-weight: 700; color: var(--zoto-police); margin-bottom: 14px;"></h3>
+      <div id="modalBody"></div>
+      <div style="margin-top: 18px; text-align: center;">
+        <a id="modalDownloadLink" href="assets/reports/Nhom1-CLC-22DTM06.docx" download class="btn-download-mini">⬇ Download Original File (.docx)</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="global-page-footer">
+    <p class="footer-gratitude-text">Thanks for visiting my portfolio 🌸</p>
+    <p class="footer-copyright-fineprint">© 2026 Tran Nguyen Ngoc Dung</p>
+  </footer>
+
+  <script>
+    function scrollToStorySection(sectionId) {
+      document.querySelectorAll('.pipeline-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById('btn-' + sectionId);
+      if (activeBtn) activeBtn.classList.add('active');
+      
+      const el = document.getElementById(sectionId);
+      if(el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function openMockDocument(type) {
+      const modal = document.getElementById('proofModal');
+      const title = document.getElementById('modalTitle');
+      const body = document.getElementById('modalBody');
+      modal.style.display = 'flex';
+      
+      if(type === 'meetmore') {
+        title.innerText = "Supporting Document: Meet More Coffee Project";
+        body.innerHTML = `
+          <div style="text-align: center; margin-bottom: 16px;">
+            <p style="font-weight: bold; font-size: 16px; color: var(--zoto-police);">RESEARCH REPORT ON EXPORT STRATEGY TO THE EU BLOC</p>
+            <p style="font-size: 11px; color: var(--ink-dim);">Academic reference file: Nhom1-CLC-22DTM06.docx</p>
+          </div>
+          <p style="font-size: 13.5px;">The original report details Meet More's plan to enter the Netherlands market with its agricultural-blend instant coffee line designed to reduce caffeine jitters.</p>
+          <div style="background-color: rgba(33,150,243,0.05); padding: 12px; border-radius: 12px; margin-top: 14px; border: 1px solid rgba(0,0,0,0.05);">
+            <p style="font-weight: bold; font-size: 12px; margin-bottom: 6px; color: var(--zoto-police);">Report structure:</p>
+            <ul style="padding-left: 16px; font-size: 12.5px; line-height: 1.5;">
+              <li><strong>Chapter 1:</strong> Company background research and capability assessment of Meet More.</li>
+              <li><strong>Chapter 2:</strong> Product features and EU food safety certification.</li>
+              <li><strong>Chapter 3:</strong> Macro-level Trade Map screening funnel across 23 EU countries.</li>
+              <li><strong>Chapter 4:</strong> Detailed evaluation of the 8-factor external EFE matrix.</li>
+            </ul>
+          </div>
+          <p style="margin-top: 14px; font-size: 12px; text-align: center; color: var(--zoto-mintdeep); font-weight: bold;">✓ Reviewed by the UFM academic committee with an excellent score (9.0/10).</p>
+        `;
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('proofModal').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

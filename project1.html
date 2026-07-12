@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project: Warm Winter Volunteer Program | Tran Nguyen Ngoc Dung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- Animated Blobs Background -->
+  <div class="blob-bg">
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+    <div class="bg-blob blob-4"></div>
+
+    <!-- Blink Sparkles -->
+    <div class="blink-star star-1">✦</div>
+    <div class="blink-star star-2">✧</div>
+    <div class="blink-star star-3">✦</div>
+    <div class="blink-star star-4">✦</div>
+    <div class="blink-star star-5">✧</div>
+    <div class="blink-star star-6">✦</div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html#about" class="brand-group">
+        <span class="brand-name">Trần Nguyễn Ngọc Dung</span>
+        <span class="brand-role">Seeking Internship & Full-time Opportunities 🌱</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html#about" class="nav-btn">Home</a>
+        <a href="index.html#experience" class="nav-btn">Experience</a>
+        <a href="index.html#education" class="nav-btn">Education</a>
+        <a href="index.html#project" id="nav-project" class="nav-btn">Projects</a>
+        <a href="index.html#contact" class="nav-btn">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="cv.html#cv" class="cv-quick-btn">
+          CV ↗
+          <span class="pulse-dot-container">
+            <span class="pulse-dot-ping"></span>
+            <span class="pulse-dot"></span>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content space-y-10 animate-fade-in">
+
+    <!-- Hero Title Banner / Meta Info -->
+    <div class="border-b pb-6">
+        <span class="badge-category" style="background-color: var(--zoto-carrotlight); color: var(--zoto-carrot);">Community Program · Leadership Experience</span>
+        <h2 class="project-title-main mt-2">Warm Winter — "Light Up Your Dream" Club</h2>
+        <p class="project-subtitle-main mt-1">A volunteer program combining recreational activities, gift-giving, and in-kind/cash donations for underprivileged children & families</p>
+
+      <div class="meta-flex-strip">
+          <div class="meta-flex-item">📍 Location: Binh Duc Primary School, Chau Thanh, Tien Giang</div>
+          <div class="meta-flex-item orange">👤 Role: Leader</div>
+          <div class="meta-flex-item">👥 Scale: 9 team leads · 60 volunteers</div>
+          <div class="meta-flex-item orange">📅 Timeline: 10 – 12/2023</div>
+      </div>
+    </div>
+
+    <!-- Story Navigation Steps Bar -->
+    <div class="consulting-pipeline">
+        <button onclick="scrollToStorySection('step-1')" class="pipeline-btn active" id="btn-step-1">
+            <span class="pipeline-btn-stage">Stage 01</span>
+            <span class="pipeline-btn-name">Program Overview</span>
+        </button>
+        <button onclick="scrollToStorySection('step-2')" class="pipeline-btn" id="btn-step-2">
+            <span class="pipeline-btn-stage">Stage 02</span>
+            <span class="pipeline-btn-name">Leadership & Execution</span>
+        </button>
+        <button onclick="scrollToStorySection('step-3')" class="pipeline-btn" id="btn-step-3">
+            <span class="pipeline-btn-stage">Stage 03</span>
+            <span class="pipeline-btn-name">Results & Evidence</span>
+        </button>
+    </div>
+
+    <!-- ==================== STAGE 01: PROGRAM OVERVIEW ==================== -->
+    <div id="step-1" class="stage-row-grid-10 border-b pb-10">
+        <div class="col-span-6 space-y-4" style="display: flex; flex-direction: column; justify-content: space-between;">
+            <div class="space-y-4">
+                <div class="section-divider-title">
+                    <span>01 / Program Overview</span>
+                    <span class="section-divider-line"></span>
+                </div>
+                <h3 class="stage-main-heading">Program Context & Objectives</h3>
+                <p class="stage-desc-text">
+                    "Warm Winter" is an annual volunteer program organized by the <strong>"Light Up Your Dream"</strong> Club, bringing recreational activities, gifts, and in-kind/cash donations to support children and underprivileged families in remote areas.
+                </p>
+                <p class="stage-desc-text">
+                    The program benefited around <strong>200 students</strong> at Binh Duc Primary School and <strong>10 underprivileged households</strong> in Chau Thanh District, Tien Giang Province.
+                </p>
+            </div>
+
+            <div class="contributions-inner-card">
+                <h4 class="contributions-inner-title">My Contributions</h4>
+                <div class="contributions-inner-flex">
+                    <span class="contribution-pill">Led a team of 9 team leads & 60 volunteers</span>
+                    <span class="contribution-pill">Built the entire program execution plan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-span-4">
+            <div class="graphic-dark-card" style="margin-top: 0;">
+                <div class="graphic-dark-card-title-row">
+                    <span class="graphic-dark-badge">Program Snapshot</span>
+                    <span style="font-size: 20px;">🔥</span>
+                </div>
+                <div style="margin: 16px 0;">
+                    <h4 class="graphic-dark-main-title">Team Scale</h4>
+                    <p class="graphic-dark-desc">Mobilized a student volunteer force over 3 months of preparation</p>
+                </div>
+                <div class="graphic-dark-stats-row">
+                    <div class="graphic-dark-stat-item">
+                        <span class="graphic-dark-stat-lbl">Team leads:</span>
+                        <span class="graphic-dark-stat-val">9 people</span>
+                    </div>
+                    <div class="graphic-dark-stat-item">
+                        <span class="graphic-dark-stat-lbl">Volunteers:</span>
+                        <span class="graphic-dark-stat-val">60 people</span>
+                    </div>
+                    <div class="graphic-dark-stat-item">
+                        <span class="graphic-dark-stat-lbl">Beneficiaries:</span>
+                        <span class="graphic-dark-stat-val">200 students + 10 households</span>
+                    </div>
+                </div>
+                <p class="graphic-caption-italic">Figure: Scale of the 2023 Warm Winter program.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 02: LEADERSHIP & EXECUTION ==================== -->
+    <div id="step-2" class="border-b pb-10 space-y-6">
+        <div class="section-divider-title">
+            <span>02 / Leadership & Execution</span>
+            <span class="section-divider-line"></span>
+        </div>
+        <h3 class="stage-main-heading">Role & Responsibilities (Leader)</h3>
+        <p class="stage-desc-text" style="max-width: 720px;">
+            As Leader, I was responsible for the entire process — from site surveys and overall planning to on-site execution on the event day.
+        </p>
+
+        <div class="stage-row-grid-10" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="contributions-inner-card" style="margin: 0;">
+                <h4 class="contributions-inner-title">① Site Survey</h4>
+                <ul style="padding-left: 16px; font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; margin-top: 8px;">
+                    <li>Researched local schools through education authorities.</li>
+                    <li>Proactively contacted and visited potential venues.</li>
+                    <li>Evaluated locations and proposed the most suitable venue.</li>
+                </ul>
+            </div>
+            <div class="contributions-inner-card" style="margin: 0;">
+                <h4 class="contributions-inner-title">② Planning</h4>
+                <ul style="padding-left: 16px; font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; margin-top: 8px;">
+                    <li>Built the program execution timeline.</li>
+                    <li>Created the staffing assignment & coordination plan.</li>
+                    <li>Developed a risk management plan and budget estimate.</li>
+                    <li>Coordinated with suppliers and local authorities.</li>
+                </ul>
+            </div>
+            <div class="contributions-inner-card" style="margin: 0;">
+                <h4 class="contributions-inner-title">③ On-site Execution</h4>
+                <ul style="padding-left: 16px; font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; margin-top: 8px;">
+                    <li>Coordinated the entire event day.</li>
+                    <li>Directly handled issues that arose on site.</li>
+                    <li>Tracked each team's progress throughout the event.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STAGE 03: RESULTS & EVIDENCE ==================== -->
+    <div id="step-3" class="space-y-8">
+        <div class="section-divider-title">
+            <span>03 / Results & Evidence</span>
+            <span class="section-divider-line"></span>
+        </div>
+        <h3 class="stage-main-heading">Key Results</h3>
+
+        <div class="stage-row-grid-10" style="grid-template-columns: repeat(2, 1fr);">
+            <div class="graphic-dark-card" style="margin: 0;">
+                <div class="graphic-dark-card-title-row">
+                    <span class="graphic-dark-badge">Gift-Giving</span>
+                    <span style="font-size: 20px;">🎁</span>
+                </div>
+                <p style="font-size: 13px; color: var(--zoto-police); line-height: 1.6; margin: 14px 0 0;">
+                    Successfully delivered gifts to <strong>33 children</strong> and <strong>10 underprivileged households</strong> in Tien Giang, worth a total of approximately <strong style="color: var(--zoto-mintdeep);">VND 17 million</strong>.
+                </p>
+            </div>
+            <div class="graphic-dark-card" style="margin: 0;">
+                <div class="graphic-dark-card-title-row">
+                    <span class="graphic-dark-badge">Youth Construction Work</span>
+                    <span style="font-size: 20px;">🏫</span>
+                </div>
+                <p style="font-size: 13px; color: var(--zoto-police); line-height: 1.6; margin: 14px 0 0;">
+                    Donated a youth construction work to the school, worth approximately <strong style="color: var(--zoto-mintdeep);">VND 15 million</strong>. The program was completed on schedule as planned.
+                </p>
+            </div>
+        </div>
+
+        <!-- Process evidence: Timeline + Duty Roster -->
+        <div class="space-y-4">
+            <h4 class="contributions-inner-title" style="font-size: 13px;">📎 Process Evidence</h4>
+            <div class="evidence-proof-grid">
+
+                <!-- ⚠️ INSERT IMAGE HERE: Program execution timeline -->
+                <!-- Place image file at: assets/mua-dong-am-ap/timeline.jpg -->
+                <div class="evidence-proof-card">
+                    <div class="evidence-proof-thumb">
+                        <img src="project1/project1.timeline.png" alt="Warm Winter program execution timeline"
+                             onerror="this.parentElement.innerHTML='<div class=&quot;event-photo-placeholder&quot; style=&quot;aspect-ratio:16/10;&quot;><span class=&quot;icon&quot;>🗓️</span><span class=&quot;label&quot;>Program Timeline Image</span><span class=&quot;path&quot;>assets/mua-dong-am-ap/timeline.jpg</span></div>'">
+                    </div>
+                    <div class="evidence-proof-label">
+                        <span>Overall Timeline</span>
+                    </div>
+                </div>
+
+                <!-- ⚠️ INSERT IMAGE HERE: Staffing assignment table -->
+                <!-- Place image file at: assets/mua-dong-am-ap/phan-cong-nhan-su.jpg -->
+                <!-- ⚠️ REPLACE WITH REAL LINK: update the href below to the actual Google Sheets/Drive link with the full staffing table -->
+                <a href="#" target="_blank" rel="noopener" class="evidence-proof-card">
+                    <div class="evidence-proof-thumb">
+                        <img src="project1/project1.dutyroster.png" alt="Warm Winter program staffing assignment table"
+                             onerror="this.parentElement.innerHTML='<div class=&quot;event-photo-placeholder&quot; style=&quot;aspect-ratio:16/10;&quot;><span class=&quot;icon&quot;>📋</span><span class=&quot;label&quot;>Staffing Assignment Table Image</span><span class=&quot;path&quot;>assets/mua-dong-am-ap/phan-cong-nhan-su.jpg</span></div>'">
+                    </div>
+                    <div class="evidence-proof-label">
+                        <span>Duty Roster</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Event day photos -->
+        <div class="space-y-4">
+            <h4 class="contributions-inner-title" style="font-size: 13px;">📸 Event Day Photos</h4>
+            <!--
+              ⚠️ INSERT 4 PHOTOS HERE: place files in the assets/mua-dong-am-ap/ folder named
+              event-1.jpg, event-2.jpg, event-3.jpg, event-4.jpg — images will display automatically;
+              if a file is missing, a striped placeholder box will show instead.
+            -->
+            <div class="event-photo-grid">
+                <figure class="event-photo-item">
+                    <img src="project1/project1.1.jpg" alt="Event day photo 1"
+                         onerror="this.parentElement.innerHTML='<div class=&quot;event-photo-placeholder&quot;><span class=&quot;icon&quot;>📷</span><span class=&quot;label&quot;>Event Photo 1</span><span class=&quot;path&quot;>assets/mua-dong-am-ap/event-1.jpg</span></div>'">
+                </figure>
+                <figure class="event-photo-item">
+                    <img src="project1/project1.2.jpg" alt="Event day photo 2"
+                         onerror="this.parentElement.innerHTML='<div class=&quot;event-photo-placeholder&quot;><span class=&quot;icon&quot;>📷</span><span class=&quot;label&quot;>Event Photo 2</span><span class=&quot;path&quot;>assets/mua-dong-am-ap/event-2.jpg</span></div>'">
+                </figure>
+                <figure class="event-photo-item">
+                    <img src="project1/project1.3.jpg" alt="Event day photo 3"
+                         onerror="this.parentElement.innerHTML='<div class=&quot;event-photo-placeholder&quot;><span class=&quot;icon&quot;>📷</span><span class=&quot;label&quot;>Event Photo 3</span><span class=&quot;path&quot;>assets/mua-dong-am-ap/event-3.jpg</span></div>'">
+                </figure>
+                <figure class="event-photo-item">
+                    <img src="project1/project1.4.jpg" alt="Event day photo 4"
+                         onerror="this.parentElement.innerHTML='<div class=&quot;event-photo-placeholder&quot;><span class=&quot;icon&quot;>📷</span><span class=&quot;label&quot;>Event Photo 4</span><span class=&quot;path&quot;>assets/mua-dong-am-ap/event-4.jpg</span></div>'">
+                </figure>
+            </div>
+        </div>
+
+        <!-- Pager: Previous / Next / View all -->
+        <div class="project-pager">
+          <a href="project3.html" class="pager-link">← Previous Project</a>
+          <a href="index.html#project" class="pager-link pager-link-all">View All Projects</a>
+          <a href="project2.html" class="pager-link">Next Project →</a>
+        </div>
+    </div>
+
+  </main>
+
+  <footer class="global-page-footer">
+    <p class="footer-gratitude-text">Thanks for viewing this project detail 🌸</p>
+    <p class="footer-copyright-fineprint">© 2026 Tran Nguyen Ngoc Dung</p>
+  </footer>
+
+  <script>
+    function scrollToStorySection(sectionId) {
+      document.querySelectorAll('.pipeline-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById('btn-' + sectionId);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>
